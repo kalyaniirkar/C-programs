@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+    int length = 0;
+    int *Arr = NULL;
+
+    printf("Enter the number of elements : \n");
+    scanf("%d", &length);
+
+     //step 1 is allocate the memory
+    Arr = (int *)calloc(length , sizeof(int)); 
+    if(Arr == NULL)
+    {
+        printf("unable to alloacte memory\n");
+    }
+    else
+    {
+        printf("memory gets successfully allocated\n");
+
+    }
+    // Step 2: Use the memory
+    // Step 3: Free the memory 
+
+    free (Arr);
+    return 0;
+}
